@@ -70,3 +70,7 @@ gradle build
 This will compile the application, run the unit tests, and package up the application.
 
 The application installer will available in both zip and tar file forms, located in `build/distributions` in a file called `mars-[version]-SNAPSHOT`.
+
+## Travis
+
+If you're interested in the build history for this project, it is integrated with [travis-ci](https://travis-ci.org/adamschmidt/mars).
