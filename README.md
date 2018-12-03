@@ -64,12 +64,18 @@ Expected Output:
 This solution uses [Gradle](https://gradle.org/) as the build tool. To build the application, run:
 
 ```
-gradle build
+./gradlew build
 ```
 
 This will compile the application, run the unit tests, and package up the application.
 
 The application installer will available in both zip and tar file forms, located in `build/distributions` in a file called `mars-[version]-SNAPSHOT`.
+
+If you'd like to see the test coverage report for this solution, run:
+
+```
+./gradlew build jacocoTestReport
+```
 
 ## Travis
 

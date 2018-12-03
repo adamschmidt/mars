@@ -102,7 +102,7 @@ public class Plateau {
                 .mapToInt(Integer::parseInt)
                 .toArray();
 
-            if(coords.length != 2)
+            if(coords.length != 2 || coords[0] < 0 || coords[1] < 0)
                 throw new RoverException(String.format("Invalid coordinate string: %s", line));
 
             return new Plateau(coords[0], coords[1]);

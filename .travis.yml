@@ -6,4 +6,4 @@ jdk:
   - oraclejdk8
 
 script:
-  - ./gradlew build
+  - ./gradlew build test jacocoTestReport
