@@ -1,8 +1,9 @@
 language: java
-install: true
+
+install: ./gradlew wrapper --gradle-version 4.9
 
 jdk:
   - oraclejdk8
 
 script:
-  - ./gradlew build --scan -s
+  - ./gradlew build
